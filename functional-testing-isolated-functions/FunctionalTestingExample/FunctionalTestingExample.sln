@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalTestingExample", "FunctionalTestingExample.csproj", "{77421D8F-38B1-41A5-8788-364293F78CC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalTestingExample.Tests", "..\FunctionalTestingExample.Tests\FunctionalTestingExample.Tests.csproj", "{60640735-1DA4-43E7-B8C6-37F6A89640EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77421D8F-38B1-41A5-8788-364293F78CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77421D8F-38B1-41A5-8788-364293F78CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77421D8F-38B1-41A5-8788-364293F78CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77421D8F-38B1-41A5-8788-364293F78CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60640735-1DA4-43E7-B8C6-37F6A89640EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60640735-1DA4-43E7-B8C6-37F6A89640EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60640735-1DA4-43E7-B8C6-37F6A89640EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60640735-1DA4-43E7-B8C6-37F6A89640EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
