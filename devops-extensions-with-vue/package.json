@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "pushd sample-extension-app && npm run generate && popd && tfx extension create --manifest-globs sample-extension.json --debug"
+    "build": "pushd sample-extension-app && npm run generate && popd && tfx extension create --manifest-globs sample-extension.json"
   },
   "keywords": [],
   "author": "",
