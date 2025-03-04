@@ -1,0 +1,38 @@
+{
+    "manifestVersion": 1,
+    "id": "{your-app-id}",
+    "publisher": "{your-publisher-name}",
+    "version": "1.0.1",
+    "name": "Sample Extension",
+    "description": "{your-extension-description}",
+    "public": false,
+    "categories": ["Azure Repos"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "{your-app-id}",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-code-web.code-hub-group"
+            ],
+            "properties": {
+                "name": "Sample Extension",
+                "uri": "index.html"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "sample-extension-app/.output/public",
+            "addressable": true,
+            "packagePath": "/"
+        }
+    ],
+    "scopes": [
+        "vso.code" 
+    ]
+}
