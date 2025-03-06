@@ -4,19 +4,18 @@
 </template>
 
 <script setup lang="ts">
-import * as SDK from 'azure-devops-extension-sdk';
 
 const userName = ref('');
 const projectName = ref('');
 
 onMounted(async () => {
-  SDK.init();
-  await SDK.ready();
+  VSS.init();
 
-  userName.value = SDK.getUser().displayName;
-
-  const webContext = await SDK.getWebContext();
-  projectName.value = webContext.project.name;
-
+  await VSS.ready(async () => {
+    const webContext = VSS.getWebContext();
+    
+    projectName.value = webContext.project.name;
+    userName.value = webContext.user.name;
+  });
 });
 </script>

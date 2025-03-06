@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "pushd sample-extension-app && npm run generate && popd && tfx extension create --manifest-globs sample-extension.json"
+    "build": "pushd sample-extension-app && npm run generate && popd && tfx extension create --rev-version --manifest-globs sample-extension.json"
   },
   "keywords": [],
   "author": "",
@@ -11,8 +11,5 @@
   "description": "",
   "devDependencies": {
     "tfx-cli": "^0.20.0"
-  },
-  "dependencies": {
-    "azure-devops-extension-sdk": "^4.0.2"
   }
 }

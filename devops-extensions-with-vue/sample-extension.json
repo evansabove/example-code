@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "{your-app-id}",
-    "publisher": "{your-publisher-name}",
-    "version": "1.0.1",
+    "id": "sample-extension",
+    "publisher": "andyevansdev",
+    "version": "1.0.17",
     "name": "Sample Extension",
     "description": "{your-extension-description}",
     "public": false,
@@ -14,7 +14,7 @@
     ],
     "contributions": [
         {
-            "id": "{your-app-id}",
+            "id": "sample-extension",
             "type": "ms.vss-web.hub",
             "targets": [
                 "ms.vss-code-web.code-hub-group"
