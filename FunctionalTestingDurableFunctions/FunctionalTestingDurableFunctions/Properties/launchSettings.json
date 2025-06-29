@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "FunctionalTestingDurableFunctions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7259"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "containerRunArguments": "--init",
+      "httpPort": 32190,
+      "useSSL": false
+    }
+  }
+}
