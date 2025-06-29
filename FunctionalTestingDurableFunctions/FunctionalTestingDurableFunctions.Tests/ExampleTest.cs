@@ -1,7 +1,6 @@
 namespace FunctionalTestingDurableFunctions.Tests;
 
 using System.Text.Json;
-using Flurl;
 using Flurl.Http;
 using Shouldly;
 
@@ -10,7 +9,7 @@ public class ExampleTest : FixtureBase
     private const string FunctionUrl = $"http://localhost:8080/api/thing?code=custom-key";
 
     [Fact]
-    public async Task ShouldDoSomethingAsync()
+    public async Task ShouldWaitForExternalEventAsync()
     {
         var response = await FunctionUrl
             .AllowAnyHttpStatus()
