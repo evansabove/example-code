@@ -16,7 +16,7 @@ public class FixtureBase : IAsyncLifetime
 
     public async Task InitializeAsync()
     {
-        //await BuildApplicationContainerAsync();
+        await BuildApplicationContainerAsync();
         await CreateNetworkAsync();
         await StartAzuriteAsync();
         await StartFunctionAppContainerAsync();
